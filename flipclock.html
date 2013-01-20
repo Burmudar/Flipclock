@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script src="flipclock.js"> </script>
+	<link rel="stylesheet" href="supersized/slideshow/css/supersized.css" type="text/css"/>
+	<link rel="stylesheet" href="supersized/slideshow/theme/supersized.shutter.css" type="text/css"/> </head>
+	<script type="text/javascript" src="supersized/slideshow/js/supersized.3.2.4.min.js"></script>
+	<script type="text/javascript" src="supersized/slideshow/theme/supersized.shutter.min.js"></script>
+	<style>
+	div#canvas-div {
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+		position: relative;
+		top: 30%;
+	}
+	</style>
+<body>
+<div id="canvas-div">
+	<canvas id="drawContext" width="1024" height="300" style="position:absolute; z-index = 0;"></canvas>
+</div>
+<script>
+	var carousel_images = [
+		{image:"images/Frame 1.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 2.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 3.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 4.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 5.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 6.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 7.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 8.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 9.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 10.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 11.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 12.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 13.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 14.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 15.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 16.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 17.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 18.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 19.JPG", title: '', thumb:'',url:''},
+		{image:"images/Frame 20.JPG", title: '', thumb:'',url:''}
+	];
+	jQuery(function($) {
+		$.supersized({
+			slideshow : 1,
+			slide_interval: 30000,
+			transition : 6,
+			transition_speed : 700,
+			autoplay : 1,
+			slide_links : 'blank',
+			slides : carousel_images
+		});
+	});
+	start();
+</script>
+</body>
+</html>
+
+
